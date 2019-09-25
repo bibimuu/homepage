@@ -1,0 +1,151 @@
+/* ----------------------------------------------------- */
+
+
+/* BASIC SETUP */
+
+
+/* ----------------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #F9F9F9;
+    color: rgba(0, 0, 0, 0.85);
+    font-family: ToppanBunkyuMinchoPr6N-Regular, HiraMinProN-W3, 'YuMincho';
+    font-weight: 100;
+    font-size: 36px;
+    text-rendering: optimizeLegibility;
+    line-height: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* REUSEABLE */
+
+
+/* ----------------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #406F79;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* HEADER*/
+
+
+/* ----------------------------------------------------- */
+
+header {
+    background-image: linear-gradient(#1f1d1dc9, #2c2b2b7c);
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #406F79;
+}
+
+.barner {
+    background-color: #F2F2F2;
+    opacity: 0.8;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #406F79;
+}
+
+.barner h1 {
+    padding: 3px 0 0 30px;
+    float: left;
+    font-size: 83%;
+    letter-spacing: 6.7px;
+    font-weight: 100;
+}
+
+.barner li {
+    display: inline-block;
+    font-size: 58%;
+    letter-spacing: 4.68px;
+    transform: translate(450px, -3.5px);
+    margin: 0 21px;
+}
+
+.commentOnPhoto {
+    color: #ffffff;
+    text-align: center;
+    margin: 300px 0 0 0;
+    letter-spacing: 8.08px;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* Home　会社情報*/
+
+
+/* ----------------------------------------------------- */
+
+.commentInInfo {
+    font-size: 66%;
+    letter-spacing: 5.39px;
+    text-align: center;
+}
+
+h2 {
+    border: 1px solid #406F79;
+    letter-spacing: 6.74px;
+    text-align: center;
+    font-size: 83%;
+    font-weight: 100;
+    max-width: 170px;
+    margin: 50px auto 0 auto;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* Home　募集要項と福利厚生*/
+
+
+/* ----------------------------------------------------- */
+
+.newSection {
+    background: rgba(243, 240, 234, 0.50);
+}
+
+.recruitColums,
+.materialColums {
+    font-size: 55%;
+    letter-spacing: 4.49px;
+}
+
+.firstColums,
+.secondColums {
+    font-size: 120%;
+    letter-spacing: 5.39px;
+    text-align: center;
+    border: 1px solid #406F79;
+}
