@@ -1,6 +1,6 @@
 <template>
     <body>
-    <header>
+    <header :style="topImgStyle">
         <div>
             <nav class="barner">
                 <h1>飯野鉄工所</h1>
@@ -51,7 +51,10 @@ import HelloWorld from './components/HelloWorld.vue';
       { message: '募集要項' },
       { message: '福利厚生' },
       { message: 'お問合せ' },
-    ]
+    ],
+    topImgStyle: {
+     'backgroundImage' : 'url(' + require("./assets/header.png") + ')'
+    } 
    }
   }
  }
