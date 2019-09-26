@@ -15,28 +15,29 @@
     </header>
 
     <section>
-        <div class="row">
-            <p class="commentInInfo">
-                120年の歴史がある鉄工所です。
-            </p>
-            <h2>会社情報</h2>
+        <div class="row IntroColums">
+            <div class="historyColums">
+                <h2>会社沿革</h2>
+                <p class="historyComment">
+                    伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
+                </p>
+            </div>
+            <div class="historyPhoto" :style="historyImg">
+                <h2>会社沿革</h2>
+            </div>
+            <div class="productionPhoto" :style="productionImg">
+                <h2>製品紹介</h2>
+            </div>
+            <div　class="productionColums">
+                <h2>製品紹介</h2>
+                <p class="productionComment">
+                    伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
+                </p>
+            </div>
         </div>
     </section>
 
-    <section class="newSection">
-        <div class="row recruitColums">
-            <p class="firstColums">採用情報</p>
-            <p>
-                伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
-            </p>
-        </div>
-        <div class="row materialColums">
-            <p class="secondColums">製品紹介</p>
-            <p>
-                伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
-            </p>
-        </div>
-    </section>
+    
     </body>
 </template>
 
@@ -45,14 +46,24 @@
   data: function() {
    return {
     items: [
-      { message: '会社情報' },
-      { message: '募集要項' },
-      { message: '福利厚生' },
-      { message: 'お問合せ' },
+      
+      { message: '会社沿革'},
+      { message: '製品情報'},
+      { message: '採用情報'},
+      { message: '福利厚生'},
+      { message: '会社概要'},
+      { message: 'アクセス'},
+      { message: 'お問合せ'},
     ],
     topImgStyle: {
      'backgroundImage' : 'url(' + require("./assets/header.png") + ')'
-    } 
+    } ,
+    historyImg: {
+        'backgroundImage' : 'url(' + require("./assets/history.png") + ')'
+    },
+    productionImg: {
+        'backgroundImage' : 'url(' + require("./assets/production.png") + ')'
+    }
    }
   }
  }

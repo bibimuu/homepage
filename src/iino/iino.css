@@ -42,9 +42,11 @@ li {
 }
 
 section {
-    padding-top: 100px;
-    padding-bottom: 100px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #406F79;
+}
+
+.newSection {
+    background: rgba(243, 240, 234, 0.50);
 }
 
 .clearfix:after {
@@ -62,7 +64,9 @@ section {
 
 /* ----------------------------------------------------- */
 
-header {
+header,
+.historyPhoto,
+.productionPhoto {
     background-image: linear-gradient(#1f1d1dc9, #2c2b2b7c);
     background-size: cover;
     height: 100vh;
@@ -83,11 +87,14 @@ header {
     font-weight: 100;
 }
 
+.barner ul {
+    text-align: right;
+}
+
 .barner li {
     display: inline-block;
     font-size: 58%;
     letter-spacing: 4.68px;
-    transform: translate(450px, -3.5px);
     margin: 0 21px;
 }
 
@@ -102,50 +109,37 @@ header {
 /* ----------------------------------------------------- */
 
 
-/* Home　会社情報*/
+/* Home　会社沿革と製品紹介*/
 
 
 /* ----------------------------------------------------- */
-
-.commentInInfo {
-    font-size: 66%;
-    letter-spacing: 5.39px;
-    text-align: center;
-}
 
 h2 {
     border: 1px solid #406F79;
     letter-spacing: 6.74px;
     text-align: center;
-    font-size: 83%;
+    font-size: 66%;
     font-weight: 100;
     max-width: 170px;
     margin: 50px auto 0 auto;
 }
 
-
-/* ----------------------------------------------------- */
-
-
-/* Home　募集要項と福利厚生*/
-
-
-/* ----------------------------------------------------- */
-
-.newSection {
-    background: rgba(243, 240, 234, 0.50);
+.IntroColums {
+    display: flex;
+    flex-wrap: wrap
 }
 
-.recruitColums,
-.materialColums {
+.historyColums,
+.productionColums,
+.historyPhoto,
+.productionPhoto {
+    width: 50%;
+    margin: 0 0;
+}
+
+.historyComment,
+.productionComment {
     font-size: 55%;
-    letter-spacing: 4.49px;
-}
-
-.firstColums,
-.secondColums {
-    font-size: 120%;
-    letter-spacing: 5.39px;
+    letter-spacing: 4px;
     text-align: center;
-    border: 1px solid #406F79;
 }
