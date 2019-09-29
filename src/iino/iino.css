@@ -42,11 +42,7 @@ li {
 }
 
 section {
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #406F79;
-}
-
-.newSection {
-    background: rgba(243, 240, 234, 0.50);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #e1f3ff;
 }
 
 .clearfix:after {
@@ -64,69 +60,113 @@ section {
 
 /* ----------------------------------------------------- */
 
-header,
-.historyPhoto,
-.productionPhoto {
-    background-image: linear-gradient(#1f1d1dc9, #2c2b2b7c);
+header {
     background-size: cover;
     height: 100vh;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #406F79;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-.barner {
+.banner {
     background-color: #F2F2F2;
-    opacity: 0.8;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #406F79;
+    box-shadow: 0px 0px 20px 0.5px rgba(0, 0, 0, 0.35);
+    position: fixed;
+    z-index: 1000;
+    padding: 7px 0;
+    width: 100%;
 }
 
-.barner h1 {
-    padding: 3px 0 0 30px;
+.banner h1 {
+    padding: 5px 0 0 30px;
     float: left;
     font-size: 83%;
     letter-spacing: 6.7px;
     font-weight: 100;
 }
 
-.barner ul {
+.banner ul {
     text-align: right;
+    padding: 0 10px;
 }
 
-.barner li {
+.banner li {
     display: inline-block;
     font-size: 58%;
     letter-spacing: 4.68px;
     margin: 0 21px;
 }
 
+.banner li:hover {
+    border-bottom: solid 2px #668ad8;
+    margin: 0 21px -2px 21px;
+    transition: .1s;
+}
+
+.top {
+    position: relative;
+}
+
 .commentOnPhoto {
     color: #ffffff;
     text-align: center;
-    margin: 300px 0 0 0;
     letter-spacing: 8.08px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 
 /* ----------------------------------------------------- */
 
 
-/* Home　会社沿革と製品紹介*/
+/* 会社沿革と製品紹介*/
 
 
 /* ----------------------------------------------------- */
 
 h2 {
-    border: 1px solid #406F79;
     letter-spacing: 6.74px;
     text-align: center;
     font-size: 66%;
     font-weight: 100;
-    max-width: 170px;
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 7px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 60%;
+    font-weight: 100;
+}
+
+.historyName,
+.productionName {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.historyName::after,
+.productionName::after,
+.recruitName::after,
+.companyName::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: #668ad8;
+    margin: 0.1em auto 0;
 }
 
 .IntroColums {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .historyColums,
@@ -134,7 +174,36 @@ h2 {
 .historyPhoto,
 .productionPhoto {
     width: 50%;
-    margin: 0 0;
+    border: 2px solid #e1f3ff;
+}
+
+.historyColums,
+.productionColums {
+    position: relative;
+    height: 500px;
+}
+
+.historyButton,
+.productionButton {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -90%);
+    transform: translate(-50%, -80%);
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    border-left: solid 4px #668ad8;
+    border-right: solid 4px #668ad8;
+    color: #668ad8;
+    background: #e1f3ff;
+    transition: .4s;
+}
+
+.historyButton:hover,
+.productionButton:hover,
+.recruitButton:hover {
+    background: #668ad8;
+    color: #FFF;
 }
 
 .historyComment,
@@ -142,4 +211,138 @@ h2 {
     font-size: 55%;
     letter-spacing: 4px;
     text-align: center;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
+
+.historyPhoto,
+.productionPhoto {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.historyColums::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 28px solid #F9F9F9;
+    top: 50.5%;
+    left: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.historyPhoto::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #e1f3ff;
+    top: 50%;
+}
+
+.productionPhoto::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 30px solid transparent;
+    border-right: 30px solid #e1f3ff;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    top: 50%;
+    left: 90.5%;
+}
+
+.productionColums::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 28px solid transparent;
+    border-right: 28px solid #F9F9F9;
+    border-bottom: 28px solid transparent;
+    border-left: 28px solid transparent;
+    top: 60%;
+    position: absolute;
+    z-index: 1;
+    -webkit-transform: translate(-100%, -87%);
+    transform: translate(-100%, -87%);
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* 採用情報*/
+
+
+/* ----------------------------------------------------- */
+
+.recruitPhoto {
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.recruitName {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.recruitComment {
+    font-size: 55%;
+    letter-spacing: 4px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.recruitButton {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -90%);
+    transform: translate(-50%, -90%);
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    border-left: solid 4px #668ad8;
+    border-right: solid 4px #668ad8;
+    color: #668ad8;
+    background: #e1f3ff;
+    transition: .4s;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* 会社概要*/
+
+
+/* ----------------------------------------------------- */
