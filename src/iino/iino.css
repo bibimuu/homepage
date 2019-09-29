@@ -346,3 +346,56 @@ h3 {
 
 
 /* ----------------------------------------------------- */
+
+.companyDiv {
+    position: relative;
+}
+
+.companyName {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.companyDetails {
+    font-size: 40%;
+    letter-spacing: 2px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-weight: normal;
+}
+
+.tableSeparate1 {
+    margin-left: 7%;
+}
+
+.tableSeparate2 {
+    margin-left: 3%;
+}
+
+.tableSeparate1,
+.tableSeparate2 {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 41%;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 40px;
+}
+
+tr {
+    border-bottom: 1px solid #e0dcdc;
+    width: 100%;
+}
+
+th {
+    width: 3rem;
+}
+
+th,
+td {
+    text-align: left;
+}

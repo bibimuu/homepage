@@ -51,25 +51,45 @@
     </section>
 
     <section>
-        <div>
+        <div class="row companyDiv">
             <h3 class="companyName">会社概要</h3>
-            <table>
-                <th>会社名</th>
-                <td>有限会社　飯野鉄工所</td>
-                <th>代表者</th>
-                <td>飯野泰造</td>
-                <th>住所</th>
-                <td>〒822-0034<br>福岡県直方史大字山部1288</td>
-                <th>TEL/FAX</th>
-                <td>0949-22-3551/<br>0949-24-2458</td>
-                <th>資本金</th>
-                <td>300万円</td>
-                <th>設立</th>
-                <td>1897年</td>
-                <th>社員数</th>
-                <td>21人（パートを含む）</td>
-                <th>主要取引先</th>
-                <td>株式会社三井ハイテック、株式会社安川電機、日本電産株式会社</td>
+            <table class="companyDetails">
+                <tbody class="tableSeparate1">
+                    <tr>
+                        <th>会社名</th>
+                        <td>有限会社 飯野鉄工所</td>
+                    </tr>
+                    <tr>
+                        <th>代表者</th>
+                        <td>飯野泰造</td>
+                    </tr>
+                    <tr>
+                        <th>住所</th>
+                        <td>〒822-0034<br>福岡県直方史大字山部1288</td>
+                    </tr>
+                    <tr>
+                        <th>TEL/FAX</th>
+                        <td>0949-22-3551/<br>0949-24-2458</td>
+                    </tr>
+                </tbody>
+                <tbody class="tableSeparate2">
+                    <tr>
+                        <th>資本金</th>
+                        <td>300万円</td>
+                    </tr>
+                    <tr>
+                        <th>設立</th>
+                        <td>1897年</td>
+                    </tr>
+                    <tr>
+                        <th>社員数</th>
+                        <td>21人（パートを含む）</td>
+                    </tr>
+                    <tr>
+                        <th>主要取引先</th>
+                        <td>株式会社三井ハイテック、株式会社安川電機、日本電産株式会社</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </section>
