@@ -155,7 +155,8 @@ h3 {
 .historyName::after,
 .productionName::after,
 .recruitName::after,
-.companyName::after {
+.companyName::after,
+.mapName::after {
     content: '';
     display: block;
     height: 1px;
@@ -207,11 +208,16 @@ h3 {
 }
 
 .historyComment,
-.productionComment {
+.productionComment,
+.recruitComment {
     font-size: 55%;
     letter-spacing: 4px;
     text-align: center;
     width: 70%;
+}
+
+.historyComment,
+.productionComment {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -310,10 +316,6 @@ h3 {
 }
 
 .recruitComment {
-    font-size: 55%;
-    letter-spacing: 4px;
-    text-align: center;
-    width: 70%;
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -399,3 +401,73 @@ th,
 td {
     text-align: left;
 }
+
+
+/* ----------------------------------------------------- */
+
+
+/* アクセス*/
+
+
+/* ----------------------------------------------------- */
+
+.mapDiv {
+    height: 500px;
+    position: relative;
+}
+
+.mapName {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.imgMap,
+.mapComment {
+    width: 50%;
+    display: inline-block;
+}
+
+.imgMap {
+    text-align: center;
+    padding-left: 65px;
+    margin: 110px 0 80px 0;
+}
+
+.imgMap iframe {
+    padding-top: 45px;
+}
+
+.mapComment {
+    text-align: left;
+    padding-left: 70px;
+}
+
+.mapComment h4 {
+    border-bottom: 1px solid #e0dcdc;
+    width: 60%;
+}
+
+.mapComment p,
+.mapComment h4 {
+    font-size: 40%;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.mapComment p {
+    margin-bottom: 3%;
+    border-bottom: 1px solid #e0dcdc;
+    width: 70%;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* お問い合わせ*/
+
+
+/* ----------------------------------------------------- */
