@@ -114,10 +114,17 @@
         </section>
 
         <section>
-            <div>
-                <h3>お問合せ</h3>
-                <p>採用についてはこちらから</p>
-                
+            <div class="inquiryDiv">
+                <h3 class="inquiryName">お問合せ</h3>
+                <p class="inquirySubtitle">採用についてはこちらから</p>
+                <div class="inquiryDetails">
+                    <h4>電話番号</h4>
+                    <p>０９４９ー２２ー３５５１</p>
+                    <h4>FAX</h4>
+                    <p>０９４９ー２４ー２４５８</p>
+                    <h4>営業日</h4>
+                    <p>土日祝日を除く、平日９時から１７時</p>
+                </div>
             </div>
         </section>
     </body>

@@ -156,7 +156,8 @@ h3 {
 .productionName::after,
 .recruitName::after,
 .companyName::after,
-.mapName::after {
+.mapName::after,
+.inquiryName::after {
     content: '';
     display: block;
     height: 1px;
@@ -209,7 +210,8 @@ h3 {
 
 .historyComment,
 .productionComment,
-.recruitComment {
+.recruitComment,
+.inquirySubtitle {
     font-size: 55%;
     letter-spacing: 4px;
     text-align: center;
@@ -468,6 +470,62 @@ td {
 
 
 /* お問い合わせ*/
+
+
+/* ----------------------------------------------------- */
+
+.inquiryDiv {
+    position: relative;
+    height: 360px;
+}
+
+.inquiryName {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.inquirySubtitle {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 8%;
+    padding-bottom: 3%;
+}
+
+.inquiryDetails {
+    font-size: 40%;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.inquiryDetails h4,
+.inquiryDetails p {
+    display: inline-block;
+    text-align: left;
+}
+
+.inquiryDetails h4 {
+    padding-left: 39%;
+    width: 45%;
+}
+
+.inquiryDetails p {
+    padding-left: 2%;
+    width: 55%;
+}
+
+.inquiryDetails p:last-child {
+    padding-bottom: 4%;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* フッター*/
 
 
 /* ----------------------------------------------------- */
