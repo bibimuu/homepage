@@ -41,7 +41,8 @@ li {
     margin: 0 auto;
 }
 
-section {
+section,
+footer {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #e1f3ff;
 }
 
@@ -107,7 +108,7 @@ header {
 }
 
 .commentOnPhoto {
-    color: #ffffff;
+    color: #F2F2F2;
     text-align: center;
     letter-spacing: 8.08px;
     position: absolute;
@@ -115,6 +116,12 @@ header {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.menuLink {
+    text-decoration: none;
+    color: #1B1B1B;
+    transition: .2s;
 }
 
 
@@ -132,7 +139,7 @@ h2 {
     font-size: 66%;
     font-weight: 100;
     margin: 0 auto;
-    color: #ffffff;
+    color: #F2F2F2;
     padding: 7px;
 }
 
@@ -205,7 +212,7 @@ h3 {
 .productionButton:hover,
 .recruitButton:hover {
     background: #668ad8;
-    color: #FFF;
+    color: #F2F2F2;
 }
 
 .historyComment,
@@ -314,7 +321,7 @@ h3 {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color: #F2F2F2;
 }
 
 .recruitComment {
@@ -324,7 +331,7 @@ h3 {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color: #F2F2F2;
 }
 
 .recruitButton {
@@ -529,3 +536,70 @@ td {
 
 
 /* ----------------------------------------------------- */
+
+.footerImg {
+    padding: 5% 0;
+    color: #F2F2F2;
+    height: 50vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.footerContents {
+    float: left;
+}
+
+.footerCompanyName h1 {
+    text-align: left;
+    font-size: 83%;
+    letter-spacing: 6.7px;
+    font-weight: 100;
+}
+
+.footerContents2 {
+    margin: 0 auto;
+    padding: 0 0 0 40%;
+    text-align: right;
+    width: 80%;
+}
+
+.footerDetails2 li {
+    width: 37%;
+    display: inline-block;
+    padding: 13px;
+}
+
+.footerDetails p,
+.footerDetails2 li {
+    font-size: 40%;
+    letter-spacing: 2px;
+    margin: 0 auto;
+}
+
+.footerDetails2 h4 {
+    text-align: center;
+    width: 50%;
+}
+
+.footerDetails2 h4:hover {
+    border-bottom: solid 2px #668ad8;
+    margin-bottom: -2px;
+    transition: .1s;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* right */
+
+
+/* ----------------------------------------------------- */
+
+.rightReserved {
+    font-size: 35%;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    text-align: center;
+}

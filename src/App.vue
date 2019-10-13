@@ -4,7 +4,9 @@
             <nav class="banner">
                 <h1>飯野鉄工所</h1>
                 <ul>
-                    <li v-for="item in items" :key="item.id">{{ item.message }}</li>
+                    <li v-for="item in items" :key="item.id" >
+                        <a class="menuLink" v-bind:href="'#'+item.idName" @click="clickSmoothScroll('#'+item.idName)">{{ item.message }}</a>
+                    </li>
                 </ul>
             </nav>
             <div>
@@ -17,11 +19,11 @@
         <section>
             <div class="IntroColums">
                 <div class="historyColums">
-                    <h3 class="historyName">会社沿革</h3>
+                    <h3 class="historyName" id="historyName">会社沿革</h3>
                     <p class="historyComment">
                         伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
                     </p>
-                    <h2 class="historyButton">会社沿革</h2>
+                    <h2 class="historyButton"><router-link to="/History">会社沿革</router-link></h2>
                 </div>
 
                 <div class="historyPhoto" :style="historyImg">
@@ -30,8 +32,8 @@
                 <div class="productionPhoto" :style="productionImg">
                 </div>
 
-                <div　class="productionColums">
-                    <h3 class="productionName">製品紹介</h3>
+                <div class="productionColums">
+                    <h3 class="productionName" id="productionName">製品紹介</h3>
                     <p class="productionComment">
                         伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
                     </p>
@@ -40,9 +42,9 @@
             </div>
         </section>
 
-        <section>
-            <div class="recruitPhoto" :style="recruitImg">
-                <h3 class="recruitName">採用情報</h3>
+        <section class="recruitPhoto" :style="recruitImg">
+            <div>
+                <h3 class="recruitName" id="recruitName">採用情報</h3>
                 <p class="recruitComment">
                     伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
                 </p>
@@ -52,7 +54,7 @@
 
         <section>
             <div class="row companyDiv">
-                <h3 class="companyName">会社概要</h3>
+                <h3 class="companyName" id="companyName">会社概要</h3>
                 <table class="companyDetails">
                     <tbody class="tableSeparate1">
                         <tr>
@@ -96,7 +98,7 @@
 
         <section>
             <div class="mapDiv">
-                <h3 class="mapName">アクセス</h3>
+                <h3 class="mapName" id="mapName">アクセス</h3>
                 <div class="imgMap">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.0309738351766!2d130.72044071520673!3d33.73401518069375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543d1671d9b1241%3A0xae1b2b5cff65ed99!2z44CSODIyLTAwMzQg56aP5bKh55yM55u05pa55biC5aSn5a2X5bGx6YOo77yR77yS77yY77yY!5e0!3m2!1sja!2sjp!4v1569838213110!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
@@ -115,7 +117,7 @@
 
         <section>
             <div class="inquiryDiv">
-                <h3 class="inquiryName">お問合せ</h3>
+                <h3 class="inquiryName" id="inquiryName">お問合せ</h3>
                 <p class="inquirySubtitle">採用についてはこちらから</p>
                 <div class="inquiryDetails">
                     <h4>電話番号</h4>
@@ -127,6 +129,33 @@
                 </div>
             </div>
         </section>
+
+        <footer class="footerImg" :style="footerImg">
+            <div class="row">
+                <div class="footerContents">
+                    <div class="footerCompanyName">
+                        <h1>飯野鉄工所</h1>
+                    </div>
+                    <div class="footerDetails">
+                        <p>〒822-0034<br>福岡県直方史大字山部1288</p>
+                        <p>TEL : 0949-22-3551</p>
+                        <p>FAX : 0949-24-2458</p>
+                    </div>
+                </div>
+                <div class="footerContents2">
+                    <ul class="footerDetails2">
+                        <li v-for="item in items" :key="item.id" v-bind:href="'#'+item.idName" @click="clickSmoothScroll('#'+item.idName)"><h4>{{ item.message }}</h4></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <section>
+            <div class="row rightReserved">
+                <p>© 2019 Iino Iron Works All rights reserved</p>
+            </div>
+        </section>
+        <router-view />
     </body>
 </template>
 
@@ -135,14 +164,15 @@
   export default {
   data: function() {
    return {
+    name: 'App',
     items: [
       
-      { message: '会社沿革'},
-      { message: '製品情報'},
-      { message: '採用情報'},
-      { message: '会社概要'},
-      { message: 'アクセス'},
-      { message: 'お問合せ'},
+      { message: '会社沿革', idName: 'historyName'},
+      { message: '製品情報',idName: 'productionName'},
+      { message: '採用情報',idName: 'recruitName'},
+      { message: '会社概要',idName: 'companyName'},
+      { message: 'アクセス',idName: 'mapName'},
+      { message: 'お問合せ',idName: 'inquiryName'},
     ],
     topImgStyle: {
      'backgroundImage' : 'linear-gradient(#1f1d1dc9,#2c2b2b7c)' + ',' + 'url(' + require("./assets/header.png") + ')'
@@ -155,14 +185,27 @@
     },
     recruitImg: {
         'backgroundImage' : 'linear-gradient( #161616ab, #474747ab)' + ',' +'url(' + require("./assets/recruit.png") + ')'
+    },
+    footerImg:{
+        'backgroundImage' : 'linear-gradient( #161616ab, #474747ab)' + ',' +'url(' + require("./assets/footer.png") + ')'
     }
    }
+  },
+  methods: {
+    clickSmoothScroll (idName) {
+      event.preventDefault()
+      this.$SmoothScroll(
+        document.querySelector(idName),
+        500,
+        null,
+        null,
+        'y'
+      )
+    }
   }
  }
 </script>
 
 <style>
 @import "iino/iino.css";
-
-
 </style>
