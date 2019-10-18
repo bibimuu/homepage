@@ -1,6 +1,6 @@
 <template>
     <body>
-        <header　class="top" :style="topImgStyle">
+        <header class="top" :style="topImgStyle">
             <nav class="banner">
                 <h1>飯野鉄工所</h1>
                 <ul>
