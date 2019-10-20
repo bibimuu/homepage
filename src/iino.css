@@ -1,0 +1,615 @@
+/* ----------------------------------------------------- */
+
+
+/* BASIC SETUP */
+
+
+/* ----------------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #F9F9F9;
+    color: rgba(0, 0, 0, 0.85);
+    font-family: ToppanBunkyuMinchoPr6N-Regular, HiraMinProN-W3, 'YuMincho';
+    font-weight: 100;
+    font-size: 36px;
+    text-rendering: optimizeLegibility;
+    line-height: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+#historyName,
+#productionName,
+#recruitName,
+#companyName,
+#mapName,
+#inquiryName {
+    padding-top: 100px;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* REUSEABLE */
+
+
+/* ----------------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section,
+footer {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #e1f3ff;
+}
+
+.router-link {
+    text-decoration: none;
+    color: #668ad8;
+    padding: 0.5em 0.5em;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -90%);
+    transform: translate(-50%, -80%);
+    text-decoration: none;
+    border-left: solid 4px #668ad8;
+    border-right: solid 4px #668ad8;
+    background: #e1f3ff;
+    transition: .4s;
+}
+
+.router-link:hover {
+    background: #668ad8;
+    color: #F2F2F2;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* メニュー*/
+
+
+/* ----------------------------------------------------- */
+
+.banner {
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 20px 0.5px rgba(0, 0, 0, 0.35);
+    position: fixed;
+    z-index: 1000;
+    padding: 7px 0;
+    width: 100%;
+    height: 60px;
+}
+
+.banner h1 {
+    padding: 5px 0 0 30px;
+    float: left;
+    font-size: 83%;
+    letter-spacing: 6.7px;
+    font-weight: 100;
+}
+
+.banner ul {
+    text-align: right;
+    padding: 0 10px;
+}
+
+.banner li {
+    display: inline-block;
+    font-size: 58%;
+    letter-spacing: 4.68px;
+    margin: 0 21px;
+}
+
+.banner li:hover {
+    border-bottom: solid 2px #668ad8;
+    margin: 0 21px -2px 21px;
+    transition: .1s;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: #1B1B1B;
+    transition: .2s;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* トップ画像j*/
+
+
+/* ----------------------------------------------------- */
+
+header {
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.commentOnPhoto {
+    color: #F2F2F2;
+    text-align: center;
+    letter-spacing: 8.08px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* 会社沿革と製品紹介*/
+
+
+/* ----------------------------------------------------- */
+
+h2 {
+    margin: 0 auto;
+    color: #F2F2F2;
+    padding: 7px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 60%;
+    font-weight: 100;
+}
+
+h3 {
+    letter-spacing: 6.74px;
+    text-align: center;
+    font-size: 66%;
+    font-weight: 100;
+}
+
+.historyName,
+.productionName {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.historyName::after,
+.productionName::after,
+.recruitName::after,
+.companyName::after,
+.mapName::after,
+.inquiryName::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: #668ad8;
+    margin: 0.1em auto 0;
+}
+
+.IntroColums {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.historyColums,
+.productionColums,
+.historyPhoto,
+.productionPhoto {
+    width: 50%;
+    border: 2px solid #e1f3ff;
+}
+
+.historyColums,
+.productionColums {
+    position: relative;
+    height: 500px;
+}
+
+.historyComment,
+.productionComment,
+.recruitComment,
+.inquirySubtitle {
+    font-size: 55%;
+    letter-spacing: 4px;
+    text-align: center;
+    width: 70%;
+}
+
+.historyComment,
+.productionComment {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.historyPhoto,
+.productionPhoto {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.historyColums::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 28px solid #F9F9F9;
+    top: 50.5%;
+    left: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.historyPhoto::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #e1f3ff;
+    top: 50%;
+}
+
+.productionPhoto::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 30px solid transparent;
+    border-right: 30px solid #e1f3ff;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    top: 50%;
+    left: 90.5%;
+}
+
+.productionColums::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 28px solid transparent;
+    border-right: 28px solid #F9F9F9;
+    border-bottom: 28px solid transparent;
+    border-left: 28px solid transparent;
+    top: 60%;
+    position: absolute;
+    z-index: 1;
+    -webkit-transform: translate(-100%, -87%);
+    transform: translate(-100%, -87%);
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* 採用情報*/
+
+
+/* ----------------------------------------------------- */
+
+.recruitPhoto {
+    height: 500px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.recruitName {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #F2F2F2;
+}
+
+.recruitComment {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #F2F2F2;
+}
+
+.recruitButton .router-link {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -90%);
+    transform: translate(-50%, -90%);
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* 会社概要*/
+
+
+/* ----------------------------------------------------- */
+
+.companyDiv {
+    position: relative;
+}
+
+.companyName {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.companyDetails {
+    font-size: 40%;
+    letter-spacing: 2px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-weight: normal;
+}
+
+.tableSeparate1 {
+    margin-left: 7%;
+}
+
+.tableSeparate2 {
+    margin-left: 3%;
+}
+
+.tableSeparate1,
+.tableSeparate2 {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 41%;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 40px;
+}
+
+tr {
+    border-bottom: 1px solid #e0dcdc;
+    width: 100%;
+}
+
+th {
+    width: 3rem;
+}
+
+th,
+td {
+    text-align: left;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* アクセス*/
+
+
+/* ----------------------------------------------------- */
+
+.mapDiv {
+    height: 500px;
+    position: relative;
+}
+
+.mapName {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.imgMap,
+.mapComment {
+    width: 50%;
+    display: inline-block;
+}
+
+.imgMap {
+    text-align: center;
+    padding-left: 65px;
+    margin: 110px 0 80px 0;
+}
+
+.imgMap iframe {
+    padding-top: 45px;
+}
+
+.mapComment {
+    text-align: left;
+    padding-left: 70px;
+}
+
+.mapComment h4 {
+    border-bottom: 1px solid #e0dcdc;
+    width: 60%;
+}
+
+.mapComment p,
+.mapComment h4 {
+    font-size: 40%;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.mapComment p {
+    margin-bottom: 3%;
+    border-bottom: 1px solid #e0dcdc;
+    width: 70%;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* お問い合わせ*/
+
+
+/* ----------------------------------------------------- */
+
+.inquiryDiv {
+    position: relative;
+    height: 360px;
+}
+
+.inquiryName {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.inquirySubtitle {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 8%;
+    padding-bottom: 3%;
+}
+
+.inquiryDetails {
+    font-size: 40%;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.inquiryDetails h4,
+.inquiryDetails p {
+    display: inline-block;
+    text-align: left;
+}
+
+.inquiryDetails h4 {
+    padding-left: 39%;
+    width: 45%;
+}
+
+.inquiryDetails p {
+    padding-left: 2%;
+    width: 55%;
+}
+
+.inquiryDetails p:last-child {
+    padding-bottom: 4%;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* フッター*/
+
+
+/* ----------------------------------------------------- */
+
+.footerImg {
+    padding: 5% 0;
+    color: #F2F2F2;
+    height: 350px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.footerContents {
+    float: left;
+}
+
+.footerCompanyName h1 {
+    text-align: left;
+    font-size: 83%;
+    letter-spacing: 6.7px;
+    font-weight: 100;
+}
+
+.footerContents2 {
+    margin: 0 auto;
+    padding: 0 0 0 40%;
+    text-align: right;
+    width: 80%;
+}
+
+.footerDetails2 li {
+    width: 37%;
+    display: inline-block;
+    padding: 13px;
+}
+
+.footerDetails p,
+.footerDetails2 li {
+    font-size: 40%;
+    letter-spacing: 2px;
+    margin: 0 auto;
+}
+
+.footerDetails2 h4 {
+    text-align: center;
+    width: 50%;
+}
+
+.footerDetails2 h4:hover {
+    border-bottom: solid 2px #668ad8;
+    margin-bottom: -2px;
+    transition: .1s;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* right */
+
+
+/* ----------------------------------------------------- */
+
+.rightReserved {
+    font-size: 35%;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ----------------------------------------------------- */
+
+
+/* 会社沿革ページ */
+
+
+/* ----------------------------------------------------- */
