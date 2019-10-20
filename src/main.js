@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-import History from './history.vue'
 import smoothScroll from 'vue-smoothscroll'
 import router from './router'
-
 
 Vue.use(smoothScroll)
 

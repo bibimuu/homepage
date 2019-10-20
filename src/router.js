@@ -1,6 +1,7 @@
 import Vue from 'vue'
-import App from './App.vue'
+import Top from './top.vue'
 import History from './history.vue'
+import Production from './production.vue'
 import Router from 'vue-router'
 
 Vue.use(Router)
@@ -13,11 +14,15 @@ export default new Router({
     mode: 'history',
     routes: [{
             path: '/',
-            component: App
+            component: Top,
         },
         {
             path: '/History',
-            component: History
+            component: History,
+        },
+        {
+            path: '/Production',
+            component: Production,
         }
     ]
 });
