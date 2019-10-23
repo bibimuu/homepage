@@ -195,7 +195,8 @@ h3 {
 .recruitName::after,
 .companyName::after,
 .mapName::after,
-.inquiryName::after {
+.inquiryName::after,
+.recruitName2::after {
     content: '';
     display: block;
     height: 1px;

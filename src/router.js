@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Top from './top.vue'
 import History from './history.vue'
 import Production from './production.vue'
+import Recruit from './recruit'
 import Router from 'vue-router'
 
 Vue.use(Router)
@@ -23,6 +24,10 @@ export default new Router({
         {
             path: '/Production',
             component: Production,
+        },
+        {
+            path: '/Recruit',
+            component: Recruit,
         }
     ]
 });
