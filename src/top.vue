@@ -1,6 +1,5 @@
 <template>
 <div>
-
     <header class="top" :style="topImgStyle">
             <div>
                 <p class="commentOnPhoto">人を大切にする鉄工所</p>
@@ -12,7 +11,7 @@
             <div class="historyColums">
                 <h3 class="historyName" id="historyName">会社沿革</h3>
                 <p class="historyComment">
-                    伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
+                    伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
                 </p>
                 <h2><router-link class="router-link" to="/History">会社沿革</router-link></h2>
             </div>
@@ -26,7 +25,7 @@
             <div class="productionColums">
                 <h3 class="productionName" id="productionName">製品紹介</h3>
                 <p class="productionComment">
-                    伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
+                    伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
                 </p>
                 <h2><router-link class="router-link" to="/Production">製品紹介</router-link></h2>
             </div>
@@ -127,16 +126,6 @@ export default {
    }
   },
   methods: {
-    clickSmoothScroll (idName) {
-      event.preventDefault()
-      this.$SmoothScroll(
-        document.querySelector(idName),
-        500,
-        null,
-        null,
-        'y'
-      )
-    }
   }
  }
 </script>

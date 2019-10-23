@@ -2,10 +2,10 @@
     <body>
         <section>
             <nav class="banner">
-                <h1>飯野鉄工所</h1>
+                <h1><router-link class="router-link-Home" to="/">飯野鉄工所</router-link></h1>
                 <ul>
                     <li v-for="item in items" :key="item.id" >
-                        <a class="menuLink" v-bind:href="'#'+item.idName" @click="clickSmoothScroll('#'+item.idName)">{{ item.message }}</a>
+                        <a class="menuLink" v-bind:href="'/#'+item.idName" @click="clickAction(item)">{{ item.message }}</a>
                     </li>
                 </ul>
             </nav>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="footerContents2">
                     <ul class="footerDetails2">
-                        <li v-for="item in items" :key="item.id" v-bind:href="'#'+item.idName" @click="clickSmoothScroll('#'+item.idName)"><h4>{{ item.message }}</h4></li>
+                        <li v-for="item in items" :key="item.id" v-bind:href="'/#'+item.idName" @click="clickAction(item)"><h4>{{ item.message }}</h4></li>
                     </ul>
                 </div>
             </div>
@@ -85,7 +85,15 @@
    }
   },
   methods: {
-    clickSmoothScroll (idName) {
+    clickAction(item) {
+        debugger
+        if (this.$route.path !== '/') {
+            return;
+        }
+        this.clickSmoothScroll(item)
+    },
+    clickSmoothScroll (item) {
+      const idName = '#'+item.idName
       event.preventDefault()
       this.$SmoothScroll(
         document.querySelector(idName),

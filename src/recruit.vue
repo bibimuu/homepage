@@ -28,18 +28,6 @@
 
 <script>
 export default {
-  methods: {
-    clickSmoothScroll (idName) {
-      event.preventDefault()
-      this.$SmoothScroll(
-        document.querySelector(idName),
-        500,
-        null,
-        null,
-        'y'
-      )
-    }
-  }
  }
 </script>
 
