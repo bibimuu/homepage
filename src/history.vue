@@ -55,17 +55,15 @@ export default {
 }
 
 .historyTable{
-    font-size: 55%;
     letter-spacing: 4px;
     margin: 0 auto;
     border-collapse: collapse;
     border-spacing: 0;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-right-style: none;
-    border-left-style: none;
-    border-top-color: rgb(231, 229, 229);
+    border-top: 1px solid rgb(231, 229, 229);
+    border-left: 1px solid rgb(231, 229, 229);
+    border-right: 1px solid rgb(231, 229, 229);
     font-size: 40%;
+    width: 70%;
 }
 
 .historyTable th {
@@ -73,21 +71,14 @@ export default {
     background-color: rgb(237, 246, 250);
     vertical-align: top;
     font-weight: normal;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-left-style: none;
-    border-right-style: none;
-    border-bottom-color: rgb(231, 229, 229);
+    border-bottom: 1px solid rgb(231, 229, 229);
+    border-right: 1px solid rgb(231, 229, 229);
     padding: 10px 20px;
 }
 
 .historyTable td {
     vertical-align: top;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(231, 229, 229);
-    border-left-style: none;
-    border-right-style: none;
+    border-bottom: 1px　solid rgb(231, 229, 229);
     padding: 10px 0 10px 20px;
     text-align: left;
     display: table-cell;
