@@ -202,10 +202,10 @@
     .is-active span:first-child {
         top: 44%;
     }
-    /* .IntroColums div:nth-child(n+3) .reverse {
+    .reverse {
         -webkit-flex-direction: row-reverse;
         flex-direction: row-reverse;
-    } */
+    }
     .productionImg1[data-v-fcc5ce5c],
     .productionImg2[data-v-fcc5ce5c] {
         margin: 35px 5% !important;
