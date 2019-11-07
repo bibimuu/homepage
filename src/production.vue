@@ -55,26 +55,19 @@ export default {
 }
 
 .productionImgs {
-    width:80%;
+    width:100%;
     margin: 0 auto;
-}
-
-.productionImg1 {
-    text-align: left;
-}
-
-.productionImg2 {
-    text-align: right;
 }
 
 .productionImg1,
 .productionImg2 {
-    height: 250px;
+    height: 280px;
     width: 30%;
     background-size: cover;
     background-position: center;
     margin: 35px 10%;
     display: inline-block;
+    text-align: center;
 }
     
 </style>

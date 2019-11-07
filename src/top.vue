@@ -11,7 +11,7 @@
             <div class="historyColums">
                 <h3 class="historyName" id="historyName">会社沿革</h3>
                 <p class="historyComment">
-                    伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
+                    飯野鉄工所は、100年を超える歴史のある鉄工所です。飯野鉄工所の創業から現在に至るまでの沿革はこちらからご覧できます。
                 </p>
                 <h2><router-link class="router-link" to="/History">会社沿革</router-link></h2>
             </div>
@@ -19,16 +19,19 @@
             <div class="historyPhoto" :style="historyImg">
                 <div class="triangle1"></div>
             </div>
-            <div class="productionPhoto" :style="productionImg">
-            </div>
 
-            <div class="productionColums">
-                <h3 class="productionName" id="productionName">製品紹介</h3>
-                <p class="productionComment">
-                    伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
-                </p>
-                <h2><router-link class="router-link" to="/Production">製品紹介</router-link></h2>
-            </div>
+            
+                <div class="productionPhoto" :style="productionImg">
+                </div>
+
+                <div class="productionColums">
+                    <h3 class="productionName" id="productionName">製品紹介</h3>
+                    <p class="productionComment">
+                        自動車などのモーターや半導体のリードフレームの金型、工作機の部品など、飯野鉄工所は、独自の技術と発想でユーザーの皆様の生産性向上、イノベーションを支える製品を生み出し続けています。
+                    </p>
+                    <h2><router-link class="router-link" to="/Production">製品紹介</router-link></h2>
+                </div>
+            
         </div>
     </section>
 
@@ -36,7 +39,7 @@
         <div>
             <h3 class="recruitName" id="recruitName">採用情報</h3>
             <p class="recruitComment">
-                伝統的な技術を武器に新時代のものづくりに挑みつづける 飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
+                伝統的な技術を武器に新時代のものづくりに挑みつづける飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。
             </p>
             <h2 class="recruitButton"><router-link class="router-link" to="/Recruit">採用情報</router-link></h2>
         </div>
@@ -124,8 +127,6 @@ export default {
         'backgroundImage' : 'linear-gradient( #161616ab, #474747ab)' + ',' +'url(' + require("./assets/recruit.png") + ')'
     }
    }
-  },
-  methods: {
   }
  }
 </script>

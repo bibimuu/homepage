@@ -1,14 +1,25 @@
 <template>
     <body>
         <section>
-            <nav class="banner">
-                <h1><router-link class="router-link-Home" to="/">飯野鉄工所</router-link></h1>
-                <ul>
-                    <li v-for="item in items" :key="item.id" >
-                        <a class="menuLink" v-bind:href="'/#'+item.idName" @click="clickAction(item)">{{ item.message }}</a>
-                    </li>
-                </ul>
-            </nav>
+                <div class="banner">
+                    <div class="header__menu">
+                        <div class="header__menu__line" @click="naviOpen()" :class="{'is-active': active}">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <h1><router-link class="router-link-Home" to="/">飯野鉄工所</router-link></h1>
+                    <transition name="navi">
+                        <div v-show="navi">
+                            <ul class="navi__wrap">
+                                <li v-for="item in items" :key="item.id" >
+                                    <a class="menuLink" v-bind:href="'/#'+item.idName" @click="clickAction(item)">{{ item.message }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </transition>
+                </div>
         </section>
 
         <router-view />
@@ -62,6 +73,8 @@
   export default {
   data: function() {
    return {
+    active: false,
+    navi: false,
     items: [
       { message: '会社沿革', idName: 'historyName'},
       { message: '製品情報',idName: 'productionName'},
@@ -102,6 +115,11 @@
         null,
         'y'
       )
+    },
+    naviOpen () {
+        
+      this.active = !this.active;
+      this.navi = !this.navi;
     }
   }
  }
@@ -109,4 +127,5 @@
 
 <style>
 @import "./iino.css";
+@import "./responsive.css";
 </style>

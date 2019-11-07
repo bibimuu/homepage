@@ -1,0 +1,219 @@
+@media (max-width: 1200px) {
+    body {
+        font-size: 34px;
+        line-height: 35px;
+    }
+    .banner li {
+        letter-spacing: 4px;
+        margin: 0 15px;
+        padding-top: 7px;
+    }
+    .banner li:hover {
+        margin: 0 15px -2px 15px;
+    }
+    .productionColums::after {
+        -webkit-transform: translate(-93%, -86%);
+        transform: translate(-93%, -86%);
+    }
+    .productionPhoto::after {
+        left: 89%;
+    }
+    .mapComment h4 {
+        width: 29%;
+    }
+    .mapComment p {
+        width: 81%;
+    }
+    .footerContents {
+        padding: 10px 0 0 50px;
+    }
+    .imgMap iframe {
+        padding-top: 70px;
+    }
+    .imgMap {
+        margin-top: 90px;
+    }
+    .productionDiv[data-v-fcc5ce5c] {
+        height: 720px !important;
+    }
+}
+
+@media (max-width: 1023px) {
+    body {
+        font-size: 32px;
+        line-height: 33px;
+    }
+    .header__menu {
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+    .header__menu__line {
+        width: 36px;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        cursor: pointer;
+    }
+    .header__menu__line span {
+        width: 100%;
+        height: 2px;
+        background: #000;
+        display: block;
+        transition: .6s;
+        position: absolute;
+    }
+    .header__menu__line span:first-child {
+        top: 0;
+    }
+    .header__menu__line span:nth-child(2) {
+        top: 14px;
+    }
+    .header__menu__line span:last-child {
+        bottom: 0;
+    }
+    .is-active span {
+        transition: .6s;
+    }
+    .is-active span:first-child {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+    .is-active span:nth-child(2) {
+        opacity: 0;
+    }
+    .is-active span:last-child {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+    .navi__wrap {
+        width: 100%;
+        background-color: rgb(53, 51, 51);
+        height: 100vw;
+        opacity: .9;
+    }
+    .banner ul {
+        margin: 47px auto 0 auto;
+    }
+    .banner li {
+        width: 15%;
+        margin: 0 42.5%;
+        padding: 20px 0 5px 0;
+    }
+    .banner li:first-child {
+        padding-top: 50px;
+    }
+    .banner li:hover {
+        border-bottom: solid 2px #668ad8;
+        margin: 0 21px -2px 21px;
+    }
+    .navi__wrap li a {
+        color: #F2F2F2;
+    }
+    .navi-enter-active,
+    .navi-leave-active {
+        transition: .6s;
+    }
+    .navi-enter,
+    .navi-leave-to {
+        opacity: 0;
+    }
+    .navi-enter-to,
+    .navi-leave {
+        opacity: 1;
+    }
+    .commentOnPhoto {
+        letter-spacing: 6px;
+    }
+    .companyDiv {
+        height: 400px;
+    }
+    .mapDiv {
+        height: 720px;
+    }
+    .imgMap {
+        width: 100%;
+    }
+    .imgMap {
+        margin-top: 70px;
+        padding-left: 0;
+    }
+    .mapComment {
+        width: 70%;
+        margin: 30px 15%;
+    }
+    .inquiryDiv {
+        height: 300px;
+    }
+    .inquirySubtitle {
+        padding-top: 12%;
+    }
+    .inquiryDetails p {
+        padding-left: 0%;
+    }
+    .inquiryDetails h4 {
+        padding-left: 33%;
+    }
+    .footerDetails2 li {
+        width: 50%;
+    }
+    .productionImg1[data-v-fcc5ce5c],
+    .productionImg2[data-v-fcc5ce5c] {
+        margin: 35px 5% !important;
+        width: 40% !important;
+    }
+    .productionDiv[data-v-fcc5ce5c] {
+        height: 740px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .banner {
+        padding: 11px 0;
+    }
+    .banner li {
+        width: 20%;
+        margin: 0 40%;
+    }
+    .header__menu__line {
+        width: 25px;
+    }
+    .header__menu__line span:first-child {
+        margin-top: 4px;
+    }
+    .header__menu__line span:nth-child(2) {
+        top: 14px;
+    }
+    .header__menu__line span:last-child {
+        margin-bottom: 4px;
+    }
+    .is-active span:last-child {
+        top: 56%;
+    }
+    .is-active span:first-child {
+        top: 44%;
+    }
+    /* .IntroColums div:nth-child(n+3) .reverse {
+        -webkit-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    } */
+    .productionImg1[data-v-fcc5ce5c],
+    .productionImg2[data-v-fcc5ce5c] {
+        margin: 35px 5% !important;
+        width: 40% !important;
+    }
+    .productionDiv[data-v-fcc5ce5c] {
+        height: 740px !important;
+    }
+}
+
+@media (max-width: 480px) {}

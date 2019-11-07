@@ -77,5 +77,4 @@ export default {
     width: 100px;
     object-fit: cover;
 }
-
 </style>

@@ -1,3 +1,8 @@
+.header__menu {
+    display: none;
+}
+
+
 /* ----------------------------------------------------- */
 
 
@@ -12,7 +17,6 @@
     box-sizing: border-box;
 }
 
-html,
 body {
     background-color: #F9F9F9;
     color: rgba(0, 0, 0, 0.85);
@@ -55,6 +59,21 @@ footer {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #e1f3ff;
 }
 
+.historyName::after,
+.productionName::after,
+.recruitName::after,
+.companyName::after,
+.mapName::after,
+.inquiryName::after,
+.recruitName2::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: #668ad8;
+    margin: 0.1em auto 0;
+}
+
 
 /* ----------------------------------------------------- */
 
@@ -92,6 +111,7 @@ footer {
     font-size: 58%;
     letter-spacing: 4.68px;
     margin: 0 21px;
+    text-align: center;
 }
 
 .banner li:hover {
@@ -103,7 +123,7 @@ footer {
 .menuLink {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.85);
-    transition: .2s;
+    /* transition: .2s; */
 }
 
 .router-link {
@@ -136,7 +156,7 @@ footer {
 /* ----------------------------------------------------- */
 
 
-/* トップ画像j*/
+/* トップ画像*/
 
 
 /* ----------------------------------------------------- */
@@ -152,6 +172,7 @@ header {
 .commentOnPhoto {
     color: #F2F2F2;
     text-align: center;
+    width: 100%;
     letter-spacing: 8.08px;
     position: absolute;
     top: 50%;
@@ -195,21 +216,6 @@ h3 {
     transform: translate(-50%, -50%);
 }
 
-.historyName::after,
-.productionName::after,
-.recruitName::after,
-.companyName::after,
-.mapName::after,
-.inquiryName::after,
-.recruitName2::after {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 50%;
-    background-color: #668ad8;
-    margin: 0.1em auto 0;
-}
-
 .IntroColums {
     display: flex;
     flex-wrap: wrap;
@@ -220,7 +226,7 @@ h3 {
 .historyPhoto,
 .productionPhoto {
     width: 50%;
-    border: 2px solid #e1f3ff;
+    /* border: 2px solid #e1f3ff; */
 }
 
 .historyColums,
@@ -265,36 +271,9 @@ h3 {
     border-bottom: 28px solid transparent;
     border-left: 28px solid #F9F9F9;
     top: 50.5%;
-    left: 100%;
+    left: 99.5%;
     position: absolute;
     z-index: 1;
-}
-
-.historyPhoto::after {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-top: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-left: 30px solid #e1f3ff;
-    top: 50%;
-}
-
-.productionPhoto::after {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-top: 30px solid transparent;
-    border-right: 30px solid #e1f3ff;
-    border-bottom: 30px solid transparent;
-    border-left: 30px solid transparent;
-    top: 50%;
-    left: 90.5%;
 }
 
 .productionColums::after {
@@ -410,7 +389,7 @@ tr {
 }
 
 th {
-    width: 3rem;
+    width: 6rem;
 }
 
 th,
@@ -449,11 +428,7 @@ td {
 .imgMap {
     text-align: center;
     padding-left: 65px;
-    margin: 110px 0 80px 0;
-}
-
-.imgMap iframe {
-    padding-top: 45px;
+    margin-top: 150px;
 }
 
 .mapComment {
@@ -463,7 +438,7 @@ td {
 
 .mapComment h4 {
     border-bottom: 1px solid #e0dcdc;
-    width: 60%;
+    width: 25%;
 }
 
 .mapComment p,
@@ -476,7 +451,7 @@ td {
 .mapComment p {
     margin-bottom: 3%;
     border-bottom: 1px solid #e0dcdc;
-    width: 70%;
+    width: 80%;
 }
 
 
@@ -490,7 +465,7 @@ td {
 
 .inquiryDiv {
     position: relative;
-    height: 360px;
+    height: 330px;
 }
 
 .inquiryName {
@@ -522,7 +497,7 @@ td {
 }
 
 .inquiryDetails h4 {
-    padding-left: 39%;
+    padding-left: 37%;
     width: 45%;
 }
 
@@ -555,6 +530,7 @@ td {
 
 .footerContents {
     float: left;
+    padding: 10px 0 0 10px;
 }
 
 .footerCompanyName h1 {
@@ -566,9 +542,8 @@ td {
 
 .footerContents2 {
     margin: 0 auto;
-    padding: 0 0 0 40%;
+    padding: 0 0 0 60%;
     text-align: right;
-    width: 80%;
 }
 
 .footerDetails2 li {
@@ -610,12 +585,3 @@ td {
     margin: 0 auto;
     text-align: center;
 }
-
-
-/* ----------------------------------------------------- */
-
-
-/* 会社沿革ページ */
-
-
-/* ----------------------------------------------------- */
