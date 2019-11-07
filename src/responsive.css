@@ -203,16 +203,50 @@
         top: 44%;
     }
     .reverse {
-        -webkit-flex-direction: row-reverse;
-        flex-direction: row-reverse;
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
-    .productionImg1[data-v-fcc5ce5c],
-    .productionImg2[data-v-fcc5ce5c] {
-        margin: 35px 5% !important;
-        width: 40% !important;
+    .historyColums::after {
+        display: none;
     }
-    .productionDiv[data-v-fcc5ce5c] {
-        height: 740px !important;
+    .productionColums::after {
+        display: none;
+    }
+    .historyColums,
+    .productionColums,
+    .historyPhoto,
+    .productionPhoto {
+        width: 100%;
+    }
+    .historyColums,
+    .productionColums {
+        height: 400px;
+    }
+    .historyPhoto,
+    .productionPhoto {
+        height: 250px;
+    }
+    .productionPhoto {
+        display: none;
+    }
+    .recruitName {
+        top: 5%;
+    }
+    .companyDetails {
+        width: 70%;
+        margin-top: 120px;
+    }
+    .tableSeparate2 {
+        margin-top: 0px;
+        margin-left: 7%;
+    }
+    .tableSeparate1,
+    .tableSeparate2 {
+        display: table-row-group;
+        vertical-align: middle;
+    }
+    .companyName {
+        top: -27%;
     }
 }
 

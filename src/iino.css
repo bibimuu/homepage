@@ -226,13 +226,12 @@ h3 {
 .historyPhoto,
 .productionPhoto {
     width: 50%;
-    /* border: 2px solid #e1f3ff; */
+    height: 500px;
 }
 
 .historyColums,
 .productionColums {
     position: relative;
-    height: 500px;
 }
 
 .historyComment,
@@ -346,6 +345,7 @@ h3 {
 
 .companyDiv {
     position: relative;
+    width: 100%;
 }
 
 .companyName {
