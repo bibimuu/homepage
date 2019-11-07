@@ -102,7 +102,8 @@
     }
     .banner li {
         width: 15%;
-        margin: 0 42.5%;
+        margin: 0 auto;
+        display: block;
         padding: 20px 0 5px 0;
     }
     .banner li:first-child {
@@ -110,7 +111,7 @@
     }
     .banner li:hover {
         border-bottom: solid 2px #668ad8;
-        margin: 0 21px -2px 21px;
+        margin: 0 auto -2px auto;
     }
     .navi__wrap li a {
         color: #F2F2F2;
@@ -247,6 +248,49 @@
     }
     .companyName {
         top: -27%;
+    }
+    .mapComment h4 {
+        width: 50%;
+    }
+    .mapComment {
+        width: 80%;
+        margin: 30px 10%;
+    }
+    .mapComment p {
+        width: 90%;
+    }
+    .inquirySubtitle {
+        padding-top: 18%;
+    }
+    .inquiryDetails h4 {
+        padding-left: 25%;
+    }
+    .footerDetails2 a {
+        width: 100%;
+    }
+    .footerDetails2 li {
+        padding: 16px 30px 10px 0;
+    }
+    .historyTable td[data-v-66c4dacb] {
+        vertical-align: middle;
+        padding: 5px 0 5px 10px;
+    }
+    .historyTable[data-v-66c4dacb] {
+        width: 90% !important;
+    }
+    .historyTable th[data-v-66c4dacb] {
+        vertical-align: middle;
+    }
+    .historyDiv[data-v-66c4dacb] {
+        height: 550px;
+    }
+    .productionImg1[data-v-fcc5ce5c],
+    .productionImg2[data-v-fcc5ce5c] {
+        margin: 35px 0 !important;
+        width: 50% !important;
+    }
+    .recruitTable[data-v-ff6fcf16] {
+        width: 90%;
     }
 }
 

@@ -3,7 +3,7 @@
         <section>
                 <div class="banner">
                     <div class="header__menu">
-                        <div class="header__menu__line" @click="naviOpen()" :class="{'is-active': active}">
+                        <div class="header__menu__line" @click="naviOpen()" :class="{'is-active': isNaviOpen}">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -11,7 +11,7 @@
                     </div>
                     <h1><router-link class="router-link-Home" to="/">飯野鉄工所</router-link></h1>
                     <transition name="navi">
-                        <div v-show="navi">
+                        <div v-show="isNaviOpen">
                             <ul class="navi__wrap">
                                 <li v-for="item in items" :key="item.id" >
                                     <a class="menuLink" v-bind:href="'/#'+item.idName" @click="clickAction(item)">{{ item.message }}</a>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="footerContents2">
                     <ul class="footerDetails2">
-                        <li v-for="item in items" :key="item.id" v-bind:href="'/#'+item.idName" @click="clickAction(item)"><h4>{{ item.message }}</h4></li>
+                        <li v-for="item in items" :key="item.id"><a class="menuLink" v-bind:href="'/#'+item.idName" @click="clickAction(item)">{{ item.message }}</a></li>
                     </ul>
                 </div>
             </div>
@@ -73,8 +73,7 @@
   export default {
   data: function() {
    return {
-    active: false,
-    navi: false,
+    isNaviOpen: false,
     items: [
       { message: '会社沿革', idName: 'historyName'},
       { message: '製品情報',idName: 'productionName'},
@@ -99,11 +98,11 @@
   },
   methods: {
     clickAction(item) {
-        debugger
         if (this.$route.path !== '/') {
             return;
         }
         this.clickSmoothScroll(item)
+        this.isNaviOpen = false //true or falseを変えてv-showを操る
     },
     clickSmoothScroll (item) {
       const idName = '#'+item.idName
@@ -117,9 +116,7 @@
       )
     },
     naviOpen () {
-        
-      this.active = !this.active;
-      this.navi = !this.navi;
+      this.isNaviOpen = !this.isNaviOpen;
     }
   }
  }

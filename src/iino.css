@@ -123,7 +123,7 @@ footer {
 .menuLink {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.85);
-    /* transition: .2s; */
+    transition: .2s;
 }
 
 .router-link {
@@ -559,15 +559,17 @@ td {
     margin: 0 auto;
 }
 
-.footerDetails2 h4 {
+.footerDetails2 a {
     text-align: center;
     width: 50%;
+    color: #F2F2F2;
 }
 
-.footerDetails2 h4:hover {
+.footerDetails2 a:hover {
     border-bottom: solid 2px #668ad8;
-    margin-bottom: -2px;
+    margin-bottom: -7px;
     transition: .1s;
+    padding-bottom: 5px;
 }
 
 
