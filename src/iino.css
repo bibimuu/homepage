@@ -56,7 +56,7 @@ li {
 
 section,
 footer {
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), inset 0 -2px 0 0 #e1f3ff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
 }
 
 .historyName::after,
@@ -454,6 +454,11 @@ td {
     width: 80%;
 }
 
+iframe {
+    height: 300px;
+    width: 400px;
+}
+
 
 /* ----------------------------------------------------- */
 
@@ -479,8 +484,8 @@ td {
 .inquirySubtitle {
     text-align: center;
     margin: 0 auto;
-    padding-top: 8%;
-    padding-bottom: 3%;
+    padding-top: 100px;
+    padding-bottom: 10px;
 }
 
 .inquiryDetails {
@@ -520,7 +525,7 @@ td {
 /* ----------------------------------------------------- */
 
 .footerImg {
-    padding: 5% 0;
+    padding: 5%;
     color: #F2F2F2;
     height: 350px;
     position: relative;
@@ -542,8 +547,8 @@ td {
 
 .footerContents2 {
     margin: 0 auto;
-    padding: 0 0 0 60%;
     text-align: right;
+    float: right;
 }
 
 .footerDetails2 li {

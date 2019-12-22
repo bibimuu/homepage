@@ -94,4 +94,14 @@ export default {
 .recruitDiv2 .recruitTable th {
     text-align: center;
 }
+@media (max-width: 767px) {
+    .recruitTable[data-v-ff6fcf16] {
+        width: 90%;
+    }
+}
+@media (max-width: 480px){
+    .recruitTable[data-v-ff6fcf16] {
+        width: 95%;
+    }
+}
 </style>

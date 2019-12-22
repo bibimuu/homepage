@@ -1,10 +1,10 @@
 <template>
   <div>
-    <header class="top" :style="topImgStyle">
-      <div>
-        <p class="commentOnPhoto">人を大切にする鉄工所</p>
-      </div>
-    </header>
+      <header class="top" :style="topImgStyle">
+        <div>
+          <p class="commentOnPhoto">人を大切にする鉄工所</p>
+        </div>
+      </header>
 
     <section>
       <div class="IntroColums">
@@ -106,8 +106,6 @@
         <div class="imgMap">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.0309738351766!2d130.72044071520673!3d33.73401518069375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543d1671d9b1241%3A0xae1b2b5cff65ed99!2z44CSODIyLTAwMzQg56aP5bKh55yM55u05pa55biC5aSn5a2X5bGx6YOo77yR77yS77yY77yY!5e0!3m2!1sja!2sjp!4v1569838213110!5m2!1sja!2sjp"
-            width="400"
-            height="300"
             frameborder="0"
             style="border:0;"
             allowfullscreen
@@ -132,6 +130,7 @@
 </template>
 
 <script>
+
 export default {
   data: function() {
     return {

@@ -3,7 +3,7 @@
         <section>
                 <div class="banner">
                     <div class="header__menu">
-                        <div class="header__menu__line" @click="naviOpen()" :class="{'is-active': isNaviOpen}">
+                        <div class="header__menu__line" @click="naviOpen()" :class="{'is-active': isNaviOpenSp}">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -11,7 +11,7 @@
                     </div>
                     <h1><router-link class="router-link-Home" to="/">飯野鉄工所</router-link></h1>
                     <transition name="navi">
-                        <div v-show="isNaviOpen">
+                        <div v-show="isNaviOpenSp">
                             <ul class="navi__wrap">
                                 <li v-for="item in items" :key="item.id" >
                                     <a class="menuLink" v-bind:href="'/#'+item.idName" @click="clickAction(item)">{{ item.message }}</a>
@@ -19,6 +19,13 @@
                             </ul>
                         </div>
                     </transition>
+                    <div class="isNaviOpenPc">
+                        <ul class="navi__wrap">
+                            <li v-for="item in items" :key="item.id" >
+                                <a class="menuLink" v-bind:href="'/#'+item.idName" @click="clickAction(item)">{{ item.message }}</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
         </section>
 
@@ -41,6 +48,11 @@
 
         <footer class="footerImg" :style="footerImg">
             <div class="row">
+                <div class="footerContents2">
+                    <ul class="footerDetails2">
+                        <li v-for="item in items" :key="item.id"><a class="menuLink" v-bind:href="'/#'+item.idName" @click="clickAction(item)">{{ item.message }}</a></li>
+                    </ul>
+                </div>
                 <div class="footerContents">
                     <div class="footerCompanyName">
                         <h1>飯野鉄工所</h1>
@@ -50,11 +62,6 @@
                         <p>TEL : 0949-22-3551</p>
                         <p>FAX : 0949-24-2458</p>
                     </div>
-                </div>
-                <div class="footerContents2">
-                    <ul class="footerDetails2">
-                        <li v-for="item in items" :key="item.id"><a class="menuLink" v-bind:href="'/#'+item.idName" @click="clickAction(item)">{{ item.message }}</a></li>
-                    </ul>
                 </div>
             </div>
         </footer>
@@ -68,12 +75,11 @@
 </template>
 
 <script>
-  import Top from "./top.vue";
 
   export default {
   data: function() {
    return {
-    isNaviOpen: false,
+    isNaviOpenSp: false,
     items: [
       { message: '会社沿革', idName: 'historyName'},
       { message: '製品情報',idName: 'productionName'},
@@ -116,7 +122,7 @@
       )
     },
     naviOpen () {
-      this.isNaviOpen = !this.isNaviOpen;
+      this.isNaviOpenSp = !this.isNaviOpenSp;
     }
   }
  }

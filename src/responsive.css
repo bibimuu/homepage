@@ -3,6 +3,9 @@
         font-size: 34px;
         line-height: 35px;
     }
+    .isNaviOpenPc {
+        display: block;
+    }
     .banner li {
         letter-spacing: 4px;
         margin: 0 15px;
@@ -33,15 +36,15 @@
     .imgMap {
         margin-top: 90px;
     }
-    .productionDiv[data-v-fcc5ce5c] {
-        height: 720px !important;
-    }
 }
 
 @media (max-width: 1023px) {
     body {
         font-size: 32px;
         line-height: 33px;
+    }
+    .isNaviOpenPc {
+        display: none;
     }
     .header__menu {
         width: 60px;
@@ -94,7 +97,7 @@
     .navi__wrap {
         width: 100%;
         background-color: rgb(53, 51, 51);
-        height: 100vw;
+        height: 1000vw;
         opacity: .9;
     }
     .banner ul {
@@ -151,25 +154,14 @@
     .inquiryDiv {
         height: 300px;
     }
-    .inquirySubtitle {
-        padding-top: 12%;
-    }
     .inquiryDetails p {
         padding-left: 0%;
     }
     .inquiryDetails h4 {
         padding-left: 33%;
     }
-    .footerDetails2 li {
+    .footerContents2 {
         width: 50%;
-    }
-    .productionImg1[data-v-fcc5ce5c],
-    .productionImg2[data-v-fcc5ce5c] {
-        margin: 35px 5% !important;
-        width: 40% !important;
-    }
-    .productionDiv[data-v-fcc5ce5c] {
-        height: 740px !important;
     }
 }
 
@@ -183,7 +175,6 @@
     }
     .banner li {
         width: 20%;
-        margin: 0 40%;
     }
     .header__menu__line {
         width: 25px;
@@ -259,17 +250,14 @@
     .mapComment p {
         width: 90%;
     }
-    .inquirySubtitle {
-        padding-top: 18%;
-    }
     .inquiryDetails h4 {
         padding-left: 25%;
     }
-    .footerDetails2 a {
-        width: 100%;
+    .footerContents {
+        padding: 10px 0 0 10px;
     }
     .footerDetails2 li {
-        padding: 16px 30px 10px 0;
+        width: 50%;
     }
     .historyTable td[data-v-66c4dacb] {
         vertical-align: middle;
@@ -284,14 +272,77 @@
     .historyDiv[data-v-66c4dacb] {
         height: 550px;
     }
-    .productionImg1[data-v-fcc5ce5c],
-    .productionImg2[data-v-fcc5ce5c] {
-        margin: 35px 0 !important;
-        width: 50% !important;
-    }
-    .recruitTable[data-v-ff6fcf16] {
-        width: 90%;
-    }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    body {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .commentOnPhoto {
+        font-size: 20px;
+    }
+    .banner li {
+        width: 30%;
+    }
+    .banner h1 {
+        padding: 5px 0 0 20px;
+    }
+    .productionColums {
+        height: 500px;
+    }
+    .recruitPhoto {
+        height: 600px;
+    }
+    .recruitButton .router-link {
+        top: 90%;
+    }
+    .companyDetails {
+        width: 85%;
+    }
+    .companyDiv {
+        height: 430px;
+    }
+    .inquirySubtitle {
+        padding-top: 25%;
+        width: 100%;
+    }
+    .inquiryDetails h4 {
+        padding-left: 5%;
+        vertical-align: top;
+        width: 30%;
+    }
+    .inquiryDetails p {
+        padding-right: 5%;
+        width: 65%;
+    }
+    .footerContents2 {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footerImg {
+        height: 390px;
+    }
+    .footerContents {
+        padding: 0;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footerCompanyName h1 {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .historyDiv[data-v-66c4dacb] {
+        height: 680px;
+    }
+    iframe {
+        height: 300px;
+        width: 300px;
+    }
+    .mapComment {
+        padding-left: 10px;
+    }
+}
