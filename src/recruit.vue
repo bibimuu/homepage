@@ -95,12 +95,12 @@ export default {
     text-align: center;
 }
 @media (max-width: 767px) {
-    .recruitTable[data-v-ff6fcf16] {
+    .recruitTable {
         width: 90%;
     }
 }
 @media (max-width: 480px){
-    .recruitTable[data-v-ff6fcf16] {
+    .recruitTable {
         width: 95%;
     }
 }

@@ -77,4 +77,25 @@ export default {
     width: 100px;
     object-fit: cover;
 }
+
+@media (max-width: 767px) {
+    .historyTable td[data-v-66c4dacb] {
+        vertical-align: middle;
+        padding: 5px 0 5px 10px;
+    }
+    .historyTable[data-v-66c4dacb] {
+        width: 90% !important;
+    }
+    .historyTable th[data-v-66c4dacb] {
+        vertical-align: middle;
+    }
+    .historyDiv[data-v-66c4dacb] {
+        height: 550px;
+    }
+}
+@media (max-width: 480px){
+    .historyDiv {
+        height: 680px;
+    }
+}
 </style>

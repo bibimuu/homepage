@@ -259,19 +259,6 @@
     .footerDetails2 li {
         width: 50%;
     }
-    .historyTable td[data-v-66c4dacb] {
-        vertical-align: middle;
-        padding: 5px 0 5px 10px;
-    }
-    .historyTable[data-v-66c4dacb] {
-        width: 90% !important;
-    }
-    .historyTable th[data-v-66c4dacb] {
-        vertical-align: middle;
-    }
-    .historyDiv[data-v-66c4dacb] {
-        height: 550px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -334,9 +321,6 @@
     .footerCompanyName h1 {
         text-align: center;
         padding-top: 20px;
-    }
-    .historyDiv[data-v-66c4dacb] {
-        height: 680px;
     }
     iframe {
         height: 300px;

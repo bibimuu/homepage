@@ -71,31 +71,31 @@ export default {
 }
 
 @media (max-width: 1200px){
-.productionDiv[data-v-fcc5ce5c] {
+.productionDiv{
     height: 720px;
 }
 }
 @media (max-width: 1023px){
-    .productionImg1[data-v-fcc5ce5c],
-    .productionImg2[data-v-fcc5ce5c] {
+    .productionImg1,
+    .productionImg2 {
         margin: 35px 5%;
         width: 40%;
     }
-    .productionDiv[data-v-fcc5ce5c] {
+    .productionDiv {
         height: 740px;
     }   
 }
 @media (max-width: 767px){
-    .productionImg1[data-v-fcc5ce5c],
-    .productionImg2[data-v-fcc5ce5c] {
+    .productionImg1,
+    .productionImg2 {
         height: 250px;
         width: 50%;
         margin: 35px 0;
     }
 }
 @media (max-width: 480px){
-    .productionImg1[data-v-fcc5ce5c],
-    .productionImg2[data-v-fcc5ce5c] {
+    .productionImg1,
+    .productionImg2{
         height: 150px;
     }
 }
