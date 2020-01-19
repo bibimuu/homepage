@@ -434,6 +434,7 @@ td {
 .mapComment {
     text-align: left;
     padding-left: 70px;
+    vertical-align: text-bottom;
 }
 
 .mapComment h4 {

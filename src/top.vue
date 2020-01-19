@@ -2,7 +2,7 @@
   <div>
       <header class="top" :style="topImgStyle">
         <div>
-          <p class="commentOnPhoto">人を大切にする鉄工所</p>
+          <p class="commentOnPhoto">有限会社　飯野鉄工所</p>
         </div>
       </header>
 
@@ -30,7 +30,7 @@
           <h3 class="productionName" id="productionName">製品紹介</h3>
           <p
             class="productionComment"
-          >自動車などのモーターや半導体のリードフレームの金型、工作機の部品など、飯野鉄工所は、独自の技術と発想でユーザーの皆様の生産性向上、イノベーションを支える製品を生み出し続けています。</p>
+          >自動車などのモーターや半導体のリードフレームの金型、工作機の部品などを製造しております。</p>
           <h2>
             <router-link class="router-link" to="/Production">製品紹介</router-link>
           </h2>
@@ -43,7 +43,7 @@
         <h3 class="recruitName" id="recruitName">採用情報</h3>
         <p
           class="recruitComment"
-        >伝統的な技術を武器に新時代のものづくりに挑みつづける飯野鉄工所。今、私たちはさらなる未来を見据え、豊かな 発想とエネルギーあふれる人材を求めています。 さあ、この会社を舞台に力いっぱい輝く自身の姿を想像してみてください。</p>
+        >これからご一緒に働く方を募集しています。採用情報については詳細からご確認ください。</p>
         <h2 class="recruitButton">
           <router-link class="router-link" to="/Recruit">採用情報</router-link>
         </h2>
@@ -103,26 +103,27 @@
     <section>
       <div class="mapDiv">
         <h3 class="mapName" id="mapName">アクセス</h3>
-        <div class="imgMap">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.0309738351766!2d130.72044071520673!3d33.73401518069375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543d1671d9b1241%3A0xae1b2b5cff65ed99!2z44CSODIyLTAwMzQg56aP5bKh55yM55u05pa55biC5aSn5a2X5bGx6YOo77yR77yS77yY77yY!5e0!3m2!1sja!2sjp!4v1569838213110!5m2!1sja!2sjp"
-            frameborder="0"
-            style="border:0;"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="mapComment">
-          <h4>住所</h4>
-          <p>
-            〒822-0034
-            <br />福岡県直方史大字山部1288
-          </p>
-          <h4>電車でお越しの方</h4>
-          <p>
-            平成筑豊鉄道伊田線 南直方御殿口駅 徒歩約１０分
-            <br />筑豊本線 勝野駅 徒歩約１３分
-            <br />平成筑豊鉄道伊田線 あかぢ駅 徒歩約１７分
-          </p>
+        <div class="imgMapCon">
+          <div class="imgMap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.0309738351766!2d130.72044071520673!3d33.73401518069375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543d1671d9b1241%3A0xae1b2b5cff65ed99!2z44CSODIyLTAwMzQg56aP5bKh55yM55u05pa55biC5aSn5a2X5bGx6YOo77yR77yS77yY77yY!5e0!3m2!1sja!2sjp!4v1569838213110!5m2!1sja!2sjp"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="mapComment">
+            <h4>住所</h4>
+            <p>
+              〒822-0034
+              <br />福岡県直方史大字山部1288
+            </p>
+            <h4>電車でお越しの方</h4>
+            <p>
+              平成筑豊鉄道伊田線 南直方御殿口駅 徒歩約１０分
+              <br />筑豊本線 勝野駅 徒歩約１３分
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -34,7 +34,7 @@
         <section>
             <div class="inquiryDiv">
                 <h3 class="inquiryName" id="inquiryName">お問合せ</h3>
-                <p class="inquirySubtitle">採用についてはこちらから</p>
+                <p class="inquirySubtitle">選考に進むことを希望される方は、お電話かFAXよりご応募ください。</p>
                 <div class="inquiryDetails">
                     <h4>電話番号</h4>
                     <p>０９４９ー２２ー３５５１</p>
