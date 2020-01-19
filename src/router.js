@@ -30,7 +30,7 @@ export default new Router({
             component: Recruit,
         }
     ],
-    scrollBehavior(to, from, savedPosition) {
+    scrollBehavior() {
         return { x: 0, y: 0 }; // トップに移動
     }
 });

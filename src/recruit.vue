@@ -71,7 +71,7 @@ export default {
 
 .recruitTable td{
     vertical-align: top;
-    border-bottom: 1px　solid rgb(231, 229, 229);
+    border-bottom: 1px solid rgb(231, 229, 229);
     padding: 10px 0 10px 20px;
     text-align: left;
     display: table-cell;

@@ -2,7 +2,7 @@
   <div>
       <header class="top" :style="topImgStyle">
         <div>
-          <p class="commentOnPhoto">有限会社　飯野鉄工所</p>
+          <p class="commentOnPhoto">有限会社 飯野鉄工所</p>
         </div>
       </header>
 

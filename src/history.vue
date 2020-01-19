@@ -5,9 +5,9 @@
                 <h3 class="historyName" id="historyName">会社沿革</h3>
                 <table class="historyTable">
                 <tr><th>明治30年</th> <td>初代飯野瀧造により炭鉱関連の鉄工所として創業</td></tr>
-                <tr><th>大正15年</th> <td>飯野憲一郎　代表取締役就任</td></tr>
-                <tr><th>昭和42年</th> <td>飯野精一郎　代表取締役就任</td></tr>
-                <tr><th>平成8年</th> <td>飯野泰造　代表取締役就任</td></tr>
+                <tr><th>大正15年</th> <td>飯野憲一郎 代表取締役就任</td></tr>
+                <tr><th>昭和42年</th> <td>飯野精一郎 代表取締役就任</td></tr>
+                <tr><th>平成8年</th> <td>飯野泰造 代表取締役就任</td></tr>
                 <tr><th>平成19年</th> <td>新工場竣工</td></tr>
                 </table>
             </div>
@@ -66,7 +66,7 @@ export default {
 
 .historyTable td {
     vertical-align: top;
-    border-bottom: 1px　solid rgb(231, 229, 229);
+    border-bottom: 1px solid rgb(231, 229, 229);
     padding: 10px 0 10px 20px;
     text-align: left;
     display: table-cell;
