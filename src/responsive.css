@@ -266,8 +266,15 @@
         font-size: 30px;
         line-height: 30px;
     }
+    header {
+        height: 60vh;
+    }
     .commentOnPhoto {
         font-size: 20px;
+        top: 55%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
     .banner li {
         width: 30%;
