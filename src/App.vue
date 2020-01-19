@@ -113,6 +113,7 @@
     clickSmoothScroll (item) {
       const idName = '#'+item.idName
       event.preventDefault()
+      this.isNaviOpenSp = false 
       this.$SmoothScroll(
         document.querySelector(idName),
         500,
