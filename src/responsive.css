@@ -291,11 +291,14 @@
     .banner h1 {
         padding: 5px 0 0 20px;
     }
+    .historyColums{
+        height: 350px;
+    }
     .productionColums {
-        height: 500px;
+        height: 350px;
     }
     .recruitPhoto {
-        height: 600px;
+        height: 400px;
     }
     .recruitButton .router-link {
         top: 90%;

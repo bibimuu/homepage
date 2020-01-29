@@ -12,6 +12,21 @@
                 </table>
             </div>
         </section>
+        <section>
+            <div class="inquiryDiv">
+                <h3 class="inquiryName" id="inquiryName">お問合せ</h3>
+                <!-- //これをはずとcss崩れます -->
+                <p class="inquirySubtitle"></p>
+                <div class="inquiryDetails">
+                    <h4>電話番号</h4>
+                    <p>０９４９ー２２ー３５５１</p>
+                    <h4>FAX</h4>
+                    <p>０９４９ー２４ー２４５８</p>
+                    <h4>営業日</h4>
+                    <p>土日祝日を除く、平日９時から１７時</p>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -84,7 +99,7 @@ export default {
         padding: 5px 0 5px 10px;
     }
     .historyTable[data-v-66c4dacb] {
-        width: 90% !important;
+        width: 90%;
     }
     .historyTable th[data-v-66c4dacb] {
         vertical-align: middle;
@@ -96,6 +111,9 @@ export default {
 @media (max-width: 480px){
     .historyDiv {
         height: 680px;
+    }
+    .historyTable[data-v-66c4dacb] {
+        width: 95%;
     }
 }
 </style>

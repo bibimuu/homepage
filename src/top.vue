@@ -10,10 +10,10 @@
       <div class="IntroColums">
         <div class="historyColums">
           <h3 class="historyName" id="historyName">会社沿革</h3>
-          <p class="historyComment">飯野鉄工所は、歴史の長い鉄工所です。飯野鉄工所の創業から現在に至るまでの沿革はこちらからご覧になれます。</p>
-          <h2>
+          <p class="historyComment">飯野鉄工所の創業から現在に至るまでの沿革はこちらからご覧になれます。</p>
+          <div class="titleButton">
             <router-link class="router-link" to="/History">会社沿革</router-link>
-          </h2>
+          </div>
         </div>
 
         <div class="historyPhoto" :style="historyImg">
@@ -31,9 +31,9 @@
           <p
             class="productionComment"
           >自動車などのモーターや半導体のリードフレームの金型、工作機の部品などを製造しております。</p>
-          <h2>
+          <div class="titleButton">
             <router-link class="router-link" to="/Production">製品紹介</router-link>
-          </h2>
+          </div>
         </div>
       </div>
     </section>
@@ -44,9 +44,9 @@
         <p
           class="recruitComment"
         >これからご一緒に働く方を募集しています。採用情報については詳細からご確認ください。</p>
-        <h2 class="recruitButton">
+        <div class="titleButton recruitButton">
           <router-link class="router-link" to="/Recruit">採用情報</router-link>
-        </h2>
+        </div>
       </div>
     </section>
 
@@ -126,6 +126,21 @@
           </div>
         </div>
       </div>
+    </section>
+    <section>
+        <div class="inquiryDiv">
+            <h3 class="inquiryName" id="inquiryName">お問合せ</h3>
+            <!-- //これをはずとcss崩れます -->
+            <p class="inquirySubtitle"></p>
+            <div class="inquiryDetails">
+                <h4>電話番号</h4>
+                <p>０９４９ー２２ー３５５１</p>
+                <h4>FAX</h4>
+                <p>０９４９ー２４ー２４５８</p>
+                <h4>営業日</h4>
+                <p>土日祝日を除く、平日９時から１７時</p>
+            </div>
+        </div>
     </section>
   </div>
 </template>

@@ -31,7 +31,7 @@
 
         <router-view />
 
-        <section>
+        <!-- <section>
             <div class="inquiryDiv">
                 <h3 class="inquiryName" id="inquiryName">お問合せ</h3>
                 <p class="inquirySubtitle">選考に進むことを希望される方は、お電話かFAXよりご応募ください。</p>
@@ -44,7 +44,7 @@
                     <p>土日祝日を除く、平日９時から１７時</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <footer class="footerImg" :style="footerImg">
             <div class="row">
@@ -68,7 +68,7 @@
 
         <section>
             <div class="row rightReserved">
-                <p>© 2019 Iino Iron Works All rights reserved</p>
+                <p>© 2020 有限会社 飯野鉄工所 All rights reserved</p>
             </div>
         </section>
     </body>
