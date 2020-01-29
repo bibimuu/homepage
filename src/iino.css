@@ -170,6 +170,8 @@ header {
 }
 
 .commentOnPhoto {
+    font-size: 36px;
+    font-weight: 200;
     color: #F2F2F2;
     text-align: center;
     width: 100%;

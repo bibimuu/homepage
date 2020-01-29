@@ -4,7 +4,7 @@
             <div class="recruitDiv row">
                 <h3 class="recruitName" id="recruitName">募集要項</h3>
                 <table class="recruitTable">
-                <tr><th>募集業種</th> <td>機械オペレーター</td></tr>
+                <tr><th>募集業種</th> <td>機械オペレーター、 一般事務</td></tr>
                 <tr><th>応募資格</th> <td>高校卒業以上</td></tr>
                 <tr><th>応募方法</th> <td>問い合わせからご連絡下さい</td></tr>
                 <tr><th>提出書類</th> <td>履歴書</td></tr>
@@ -17,7 +17,6 @@
             <div class="recruitDiv2 row">
                 <h3 class="recruitName2">福利厚生</h3>
                 <table class="recruitTable">
-                <tr><th>休日</th> <td>年末年始、盆の長期休暇</td></tr>
                 <tr><th>社会保険</th> <td>健康保険、厚生年金、雇用保険、労災保険</td></tr>
                 <tr><th>保健管理</th> <td>健康診断 年1回</td></tr>
                 </table>

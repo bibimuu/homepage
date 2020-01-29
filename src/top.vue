@@ -2,7 +2,7 @@
   <div>
       <header class="top" :style="topImgStyle">
         <div>
-          <p class="commentOnPhoto">有限会社 飯野鉄工所</p>
+          <h1 class="commentOnPhoto">有限会社 飯野鉄工所</h1>
         </div>
       </header>
 
@@ -10,7 +10,7 @@
       <div class="IntroColums">
         <div class="historyColums">
           <h3 class="historyName" id="historyName">会社沿革</h3>
-          <p class="historyComment">飯野鉄工所は、100年を超える歴史のある鉄工所です。飯野鉄工所の創業から現在に至るまでの沿革はこちらからご覧できます。</p>
+          <p class="historyComment">飯野鉄工所は、歴史の長い鉄工所です。飯野鉄工所の創業から現在に至るまでの沿革はこちらからご覧になれます。</p>
           <h2>
             <router-link class="router-link" to="/History">会社沿革</router-link>
           </h2>
@@ -67,7 +67,7 @@
               <th>住所</th>
               <td>
                 〒822-0034
-                <br />福岡県直方史大字山部1288
+                <br />福岡県直方市大字山部1288
               </td>
             </tr>
             <tr>
@@ -116,7 +116,7 @@
             <h4>住所</h4>
             <p>
               〒822-0034
-              <br />福岡県直方史大字山部1288
+              <br />福岡県直方市大字山部1288
             </p>
             <h4>電車でお越しの方</h4>
             <p>

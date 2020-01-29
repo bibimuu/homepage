@@ -3,6 +3,9 @@
         font-size: 34px;
         line-height: 35px;
     }
+    .commentOnPhoto {
+        font-size: 34px;
+    }
     .isNaviOpenPc {
         display: block;
     }
@@ -42,6 +45,9 @@
     body {
         font-size: 32px;
         line-height: 33px;
+    }
+    .commentOnPhoto {
+        font-size: 32px;
     }
     .isNaviOpenPc {
         display: none;
@@ -169,6 +175,9 @@
     body {
         font-size: 30px;
         line-height: 30px;
+    }
+    .commentOnPhoto {
+        font-size: 30px;
     }
     .banner {
         padding: 11px 0;
