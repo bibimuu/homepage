@@ -131,7 +131,7 @@ footer {
     color: #668ad8;
     padding: 0.5em 0.5em;
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 50%;
     -webkit-transform: translate(-50%, -90%);
     transform: translate(-50%, -80%);
@@ -228,7 +228,7 @@ h3 {
 .historyPhoto,
 .productionPhoto {
     width: 50%;
-    height: 500px;
+    height: 400px;
 }
 
 .historyColums,

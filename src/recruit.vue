@@ -9,7 +9,7 @@
                 <tr><th>応募方法</th> <td>問い合わせからご連絡下さい</td></tr>
                 <tr><th>提出書類</th> <td>履歴書</td></tr>
                 <tr><th>選考方法</th> <td>面接・筆記試験</td></tr>
-                <tr><th>業務内容</th> <td>旋盤、マシニングセンター、円筒研削盤などの工作機の操作。またCADを用いたNCのプログラミングなども行います。</td></tr>
+                <tr><th>業務内容</th> <td>【機械オペレーター】<br>旋盤、マシニングセンター、円筒研削盤などの工作機の操作。またCADを用いたNCのプログラミングなども行います。<br>【一般事務】<br>専用ソフトを用いた受発注、電話応対など</td></tr>
                 </table>
             </div>
         </section>
@@ -47,7 +47,7 @@ export default {
 <style scoped>
 .recruitDiv{
     padding-top: 200px;
-    height: 670px;
+    height: 750px;
     position: relative;
 }
 
@@ -92,7 +92,7 @@ export default {
 
 .recruitDiv2{
     padding-top: 110px;
-    height: 350px;
+    height: 430px;
     position: relative;
 }
 .recruitName2{
