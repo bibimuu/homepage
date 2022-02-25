@@ -73,9 +73,13 @@
             <tr>
               <th>TEL/FAX</th>
               <td>
-                0949-22-3551/
-                <br />0949-24-2458
+                TEL: 0949-22-3551
+                <br />FAX: 0949-24-2458
               </td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td>iino-iron.works@kyi.biglobe.ne.jp</td>
             </tr>
           </tbody>
           <tbody class="tableSeparate2">
@@ -137,6 +141,8 @@
                 <p>０９４９ー２２ー３５５１</p>
                 <h4>FAX</h4>
                 <p>０９４９ー２４ー２４５８</p>
+                <h4>Email</h4>
+                <p>iino-iron.works@kyi.biglobe.ne.jp</p>
                 <h4>営業日</h4>
                 <p>土日祝日を除く、平日９時から１７時</p>
             </div>
