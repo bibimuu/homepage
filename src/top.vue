@@ -79,7 +79,7 @@
             </tr>
             <tr>
               <th>Email</th>
-              <td>iino-iron.works@kyi.biglobe.ne.jp</td>
+              <td><NOBR>iino-iron.works@kyi.biglobe.ne.jp</NOBR></td>
             </tr>
           </tbody>
           <tbody class="tableSeparate2">
@@ -142,7 +142,7 @@
                 <h4>FAX</h4>
                 <p>０９４９ー２４ー２４５８</p>
                 <h4>Email</h4>
-                <p>iino-iron.works@kyi.biglobe.ne.jp</p>
+                <p><NOBR>iino-iron.works@kyi.biglobe.ne.jp</NOBR></p>
                 <h4>営業日</h4>
                 <p>土日祝日を除く、平日９時から１７時</p>
             </div>
